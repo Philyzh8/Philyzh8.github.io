@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Home | scMGCA</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://philyzh8.github.io/favicon.ico?v=1671523598540">
+<link rel="stylesheet" href="https://philyzh8.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="scMGCA
+ 
+scMGCA is a Python package containing tools for clustering single-cell data based on a graph-embedding autoenco..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://philyzh8.github.io">
+        <img src="https://philyzh8.github.io/images/avatar.png?v=1671523598540" class="site-logo">
+        <h1 class="site-title">scMGCA</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://philyzh8.github.io/post/topological-identification-and-interpretation-for-high-throughput-single-cell-gene-regulation-elucidation-across-multiple-platforms-using-scmgca" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="https://philyzh8.github.io/post/installation" class="site-nav">
+            Installation
+          </a>
+        
+      
+        
+          <a href="https://philyzh8.github.io/post/tutorial" class="site-nav">
+            Tutorial
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      <a href="https://github.com/Philyzh8/scMGCA">scMGCA</a> | <a class="rss" href="https://philyzh8.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Home</h2>
+            <div class="post-date">2022-11-04</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="scmgca">scMGCA</h2>
+<p><a href="https://pypi.org/project/scMGCA/"><img src="https://img.shields.io/pypi/v/scMGCA.svg" alt="PyPI badge" loading="lazy"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" loading="lazy"></a></p>
+<p><code>scMGCA</code> is a Python package containing tools for clustering single-cell data based on a graph-embedding autoencoder that simultaneously learns cell–cell topology representation and cluster assignments.</p>
+<h2 id="overview">Overview</h2>
+<p>Single-cell RNA sequencing (scRNA-seq) provides high-throughput gene expression information to explore cellular heterogeneity at the individual cell level. A major challenge in characterizing high-throughput gene expression data arises from the curse of dimensionality, and the prevalence of dropout events. To address these concerns, we developed a single-cell clustering method (scMGCA) based on a graph-embedding autoencoder that simultaneously learns cell–cell topology representation and cluster assignments. In scMGCA, we propose a graph convolutional autoencoder to preserve the topological information of cells from the embedded space in multinomial distribution, and employs the positive pointwise mutual information (PPMI) matrix for cell graph augmentation. Experiments show that scMGCA is accurate and effective for cell segregation and superior to other state-of-the-art models across multiple platforms, and is also able to correct for the batch effect from multiple scRNA-seq protocols. In addition, we perform genomic interpretation on the key compressed transcriptomic space of the graph-embedding autoencoder to demonstrate the underlying gene regulation mechanism. In a pancreatic ductal adenocarcinoma (PDAC) dataset, with 57,530 individual pancreatic cells from primary PDAC tumors and control pancreases, scMGCA successfully provided annotations on the specific cell types and revealed differential gene expression levels across multiple tumor-associated and cell signalling pathways in PDAC progression through single-cell trajectory and gene set enrichment analysis.</p>
+<figure data-type="image" tabindex="1"><img src="https://user-images.githubusercontent.com/65069252/192435582-5f012751-76ea-42a0-9ad2-a6e56f544528.jpg" alt="1664254559(1)" loading="lazy"></figure>
+<h2 id="license">License</h2>
+<p>This project is covered under the <strong>MIT License</strong>.</p>
+<h2 id="source-code">Source code</h2>
+<p>The source code of <code>scMGCA</code> is at GitHub: <a href="https://github.com/Philyzh8/scMGCA">https://github.com/Philyzh8/</a>.</p>
+
+            </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

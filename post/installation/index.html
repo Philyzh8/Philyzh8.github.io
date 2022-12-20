@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Installation | scMGCA</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://philyzh8.github.io/favicon.ico?v=1671523598540">
+<link rel="stylesheet" href="https://philyzh8.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="System Requirements
+Hardware requirements
+scMGCA package requires only a standard computer with enough RAM to support th..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://philyzh8.github.io">
+        <img src="https://philyzh8.github.io/images/avatar.png?v=1671523598540" class="site-logo">
+        <h1 class="site-title">scMGCA</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://philyzh8.github.io/post/topological-identification-and-interpretation-for-high-throughput-single-cell-gene-regulation-elucidation-across-multiple-platforms-using-scmgca" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="https://philyzh8.github.io/post/installation" class="site-nav">
+            Installation
+          </a>
+        
+      
+        
+          <a href="https://philyzh8.github.io/post/tutorial" class="site-nav">
+            Tutorial
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      <a href="https://github.com/Philyzh8/scMGCA">scMGCA</a> | <a class="rss" href="https://philyzh8.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Installation</h2>
+            <div class="post-date">2022-11-04</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="system-requirements">System Requirements</h2>
+<h3 id="hardware-requirements">Hardware requirements</h3>
+<p><code>scMGCA</code> package requires only a standard computer with enough RAM to support the in-memory operations.</p>
+<h3 id="software-requirements">Software requirements</h3>
+<h4 id="os-requirements">OS Requirements</h4>
+<p>This package is supported for <em>Linux</em>. The package has been tested on the following systems:</p>
+<ul>
+<li>Linux: Ubuntu 18.04</li>
+</ul>
+<h4 id="python-dependencies">Python Dependencies</h4>
+<p><code>scMGCA</code> mainly depends on the Python scientific stack.</p>
+<pre><code>numpy
+scipy
+tensorflow
+scikit-learn
+pandas
+scanpy
+anndata
+</code></pre>
+<p>For specific setting, please see <a href="https://github.com/Philyzh8/scMGCA/blob/master/requirements.txt">requirement</a>.</p>
+<h2 id="installation-guide">Installation Guide:</h2>
+<h3 id="install-from-pypi">Install from PyPi</h3>
+<pre><code>$ conda create -n scMGCA_env python=3.6.8
+$ conda activate scMGCA_env
+$ pip install -r requirements.txt
+$ pip install scMGCA
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://philyzh8.github.io/post/topological-identification-and-interpretation-for-high-throughput-single-cell-gene-regulation-elucidation-across-multiple-platforms-using-scmgca/">
+                  <h3 class="post-title">
+                    Home
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
