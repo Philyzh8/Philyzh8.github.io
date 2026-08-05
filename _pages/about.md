@@ -49,8 +49,11 @@ I am also interested in interdisciplinary collaborations involving bioinformatic
 ## 招生
 2027年9月入学招生名额
 
+
 博士生：1个名额
 
+
 硕士生：仍有推免名额
+
 
 有意申请的同学请将个人简历发送至邮箱：yuzhuohan@jlu.edu.cn
